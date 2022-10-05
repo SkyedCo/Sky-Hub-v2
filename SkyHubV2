@@ -1,0 +1,90 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Sky Hub v2", "BloodTheme")
+
+
+local BloxFruits = Window:NewTab("Blox Fruits")
+local BloxFruitsSection = BloxFruits:NewSection("Blox Fruits")
+
+
+BloxFruitsSection:NewButton("Mukuro Hub", "Why did you click on this?", function()
+    loadstring(game:HttpGet"https://raw.githubusercontent.com/xDepressionx/Free-Script/main/AllScript.lua")()
+end)
+
+
+
+
+BloxFruitsSection:NewButton("Zama Hub", "Why did you click on this?", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RimuruScripter/Zama-Hub/main/LoadingScriptNew"))()
+end)
+
+
+BloxFruitsSection:NewButton("Ripper Hub", "Why did you click on this?", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/hajibeza/RIPPER-HUB/main/RIPPERHUBV2.lua"))()
+end)
+
+
+BloxFruitsSection:NewButton("Nenta Hub", "Why did you click on this?", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/NinoGod/NetnaYay/8d21ce23346c500c93bb8b4a71f7791e4058a70b/startload.lua'))()
+end)
+
+BloxFruitsSection:NewButton("Hallow Hub", "Why did you click on this?", function()
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/master/hxllow"))()
+end)
+
+
+
+--Misc
+
+local Misc = Window:NewTab("Misc")
+local MiscSection = Misc:NewSection("Nothing Here rn wait for v3")
+
+
+
+--Script
+
+local Scripts = Window:NewTab("Scripts")
+local ScriptsSection = Scripts:NewSection("Scripts for every game")
+
+ScriptsSection:NewButton("Fe Chat Bypass Banable use alt", "Bannable so use an alt if you value your account", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/daddysyn/synergy/additional/betterbypasser",true))()
+
+end)
+
+
+
+ScriptsSection:NewButton("Inf yield ", "Fly speed etc)", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+
+end)
+
+
+
+
+
+
+
+
+
+ScriptsSection:NewToggle("Speed", "Gives you super speed", function(state)
+    if state then
+       game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    end
+end)
+
+
+ScriptsSection:NewToggle("High Jump", "Makes you jump high", function(state)
+    if state then
+       game.Players.LocalPlayer.Character.Humanoid.JumpPower = 120
+    else
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    end
+end)
+
+
+--Credits
+
+local Credits = Window:NewTab("Credits")
+local CreditsSection = Credits:NewSection("Made with ❤️ By Skyed and help from ProDuck_Lord")
+
